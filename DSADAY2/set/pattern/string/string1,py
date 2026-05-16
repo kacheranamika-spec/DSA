@@ -1,0 +1,97 @@
+#find and rfind
+
+# s="learning python is very difficult by ashish sir"
+# print(s.find("python"))
+# print(s.find("java"))
+# print(s.find("r"))
+# print(s.rfind("r"))
+
+
+# s="learning python is very difficult by ashish sir"
+# s1 =s.replace("difficult","easy" )
+# print(s1)
+
+
+# s="learning python is very difficult from xyz sir"
+# ls=s.split()
+# print(ls)
+# print(len(ls))
+
+# s= "22-02-2022"
+# ls=s.split("-")
+# print(ls)
+
+# s="www.ashish.com"
+# ls=s.split(".")
+# print(ls)
+
+
+# l=['Nagpur','Pune','Mumbai','Delhi']
+# s=",".join(l)
+# print(s)
+
+
+
+#reverse the string
+# s=input("Enter String:")
+# print('.'.join(reversed(s)))
+
+
+# Program to reverse order of words
+# s = "Learning Python is very Easy by Ashish Sir"
+# words = s.split()
+# reversed_words = words[::-1]
+# result = " ".join(reversed_words)
+# print(result)
+
+
+#program to reverse internal content of string
+# s = "Learning Python is very Easy by Ashish Sir"
+# words = s.split()   
+# reversed_words = [word[::-1] for word in words]
+# result = " ".join(reversed_words)
+# print(result)
+
+#WRITE A PROGRAM TO REMOVE DUBLICATE CHARATECTER FROM THE GIVEN INPUT STRING.
+
+# input = ABCDABBCDABBCCCDDEEEEF
+# output = ABCDE
+
+# s = "ABCDABBCDABBCCCDDEEEEF"
+# result = ""
+# for ch in s:
+#     if ch not in result:
+#         result = result + ch
+# print("Output =", result)
+
+#accept mobile number check that mobile number is 10 digit and digit only. check number is valid in india or not(6,7,8,9)
+
+
+# Program to check valid Indian mobile number
+
+# mobile = input("Enter mobile number: ")
+# if len(mobile) == 10 and mobile.isdigit(): 
+#     if mobile[0] in ['6', '7', '8', '9']:
+#         print("Valid Indian Mobile Number")
+#     else:
+#         print("Invalid Mobile Number")
+# else:
+#     print("Mobile number must contain exactly 10 digits")
+
+
+    #OR
+
+
+
+
+no = input("Enter mobile number: ")
+if no.isdigit():
+    if len(no) == 10:
+        if no.startswith('6') or no.startswith('7') or no.startswith('8') or no.startswith('9'):
+            print("Valid Indian Mobile Number")
+        else:
+            print("Invalid Mobile Number")           
+    else:
+        print("Mobile number must contain exactly 10 digits")
+else:
+    print("Please enter digits only")
