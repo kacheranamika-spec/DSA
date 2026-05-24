@@ -1,0 +1,12 @@
+import re
+
+count = 0
+
+pattern = re.compile("ab")
+matcher = pattern.finditer("abaababaab")
+
+for match in matcher:
+    count += 1
+    print(match.start(), '...', match.end(), '...', match.group())
+
+print("Total number of group occurrences:", count)
